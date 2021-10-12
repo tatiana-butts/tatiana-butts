@@ -12,3 +12,4 @@ git clone git@github.com:fablabbcn/mdef-template.git
 You can visit the template demo here: https://fablabbcn.github.io/mdef-template/
 
 I am testing this october 7th and i dont really understand what im doing
+
