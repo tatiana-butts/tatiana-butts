@@ -44,7 +44,7 @@ figcaption {
     left: 0;
     background-color: #53AECB; /* blue */
     overflow-x: hidden; /* disable horizontal scroll */
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   /* The navigation menu links */
