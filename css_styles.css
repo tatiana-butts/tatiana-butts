@@ -37,7 +37,7 @@ figcaption {
   .side_nav {
     font-family: 'Syne Mono', monospace;
     height: 25%; /* Full-height: remove this if you want "auto" height */
-    width: 150px; /* Set the width of the sidebar */
+    width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -147,10 +147,14 @@ header {
   background-repeat: no-repeat;
 }
 
-paragraph {
-  top: 80px
-  margin-left: 150px;
-  position: relative;
+.square-background {
+  height: 500px%; /* Full-height: remove this if you want "auto" height */
+  width: 800px; /* Set the width of the sidebar */
+  z-index: 0; /* Stay on top */
+  top: 250; /* Stay at the top */
+  left: 250;
+  background-color: #53AECB; /* blue */
+  padding-top: 25px;
 
 }
 
@@ -200,8 +204,8 @@ paragraph {
   text-align: right;
 }
 
-.side_nav-alignment {
-
+.margin-alignment {
+  margin-left: 140px;
 }
 
 .contact-info-button {
@@ -235,9 +239,8 @@ footer p {
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-  margin-left: 150px;
   float: left;
-  width: 33.33%;
+  width: 23%;
   padding: 5px;
 }
 
@@ -279,14 +282,16 @@ footer p {
 .gallery-container {
   position: relative;
   display: none;
+  margin-left: 200px;
+
 }
 
 /* Expanding image text */
 #imgtext {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
+  bottom: -20px;
+  left: 0px;
+  color: black;
   font-size: 20px;
 }
 
