@@ -21,6 +21,12 @@ h3 {
   font-size: 40px;
 }
 
+h4 {
+  font-family: 'Syne Mono', sans-serif;
+  font-size: 20px;
+  font-style: bold;
+}
+
 p {
   font-family: 'Syne Mono', monospace;
   margin-top: 1px;
@@ -36,7 +42,7 @@ figcaption {
   /* The sidebar menu */
   .side_nav {
     font-family: 'Syne Mono', monospace;
-    height: 25%; /* Full-height: remove this if you want "auto" height */
+    height: 27%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -44,7 +50,7 @@ figcaption {
     left: 0;
     background-color: #53AECB; /* blue */
     overflow-x: hidden; /* disable horizontal scroll */
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   /* The navigation menu links */
