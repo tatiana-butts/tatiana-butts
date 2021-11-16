@@ -19,6 +19,7 @@ h2 {
 h3 {
   font-family: 'Syne Mono', sans-serif;
   font-size: 40px;
+  line-height: 36px;
 }
 
 h4 {
@@ -39,10 +40,57 @@ figcaption {
 }
 
 
+
+
+/* website grid template
+punctuation means blank space */
+
+.grid {
+  display: grid;
+  margin-left: 50px;
+  grid-template-columns: 1fr 500px 500px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". title title ."
+  ". header header ."
+  ". space . ."
+  ". sidebar content ."
+  ". footer footer ."
+}
+
+.title {
+  grid-area: title;
+}
+
+.header {
+  grid-area: header;
+}
+
+.space {
+  grid-area: space;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  justify-self: end;
+  margin-right: 20px;
+}
+
+.content {
+  grid-area: content;
+  justify-self: start;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+
   /* The sidebar menu */
   .side_nav {
     font-family: 'Syne Mono', monospace;
-    height: 27%; /* Full-height: remove this if you want "auto" height */
+    height: 185px; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -170,11 +218,11 @@ header {
   font-size: 20px;
   text-decoration: underline;
   color: black;
-  padding: 10px 20px;
+  padding: 1px 20px;
   margin-top: 20px;
-  margin-left: 120px;
+  margin-left: 20px;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
@@ -185,11 +233,31 @@ header {
 
 .image-me {
   box-shadow: 5px 5px 40px rgba(0,0,0,0.3);
+  width: 50%;
 }
 
 .image {
   box-shadow: 5px 5px 40px rgba(0,0,0,0.3);
+
 }
+
+
+/* Opacity 2 */
+.hover12 figure {
+	background: #000000;
+  width: 50%;
+}
+
+.hover12 figure img {
+	opacity: 1;
+	transition: .3s ease;
+}
+.hover12 figure:hover img {
+	opacity: .5;
+}
+
+
+
 
 .project {
   margin: 160px;
