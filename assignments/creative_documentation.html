@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDEF</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+    <link rel="stylesheet" href="../css_styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=IBM+Plex+Mono:wght@500&family=Syne+Mono&family=Trispace:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Side navigation -->
+
+  <div class="side_nav">
+    <a href="../index.html">home</a>
+    <a href="../weekly_reflections/weekly_reflections.html">weekly reflections</a>
+    <a href="../assignments/assignments.html">assignments</a>
+    <a href="../projects/notes.html">notes</a>
+  </div>
+
+
+
+    <header>
+          <h1>Assignments</h1>
+          <p>Here is where I store my weekly assignments
+        </p>
+        </header>
+
+
+
+        <h3>Design Studio Assignment</h3>
+        <p>Creative documentation</p>
+
+
+
+<h2>
+For this assignment, we were instructed to document the two week <a href="../weekly_reflections/week5.html">Tech Beyond the Myth</a> course in a creative manner. The guidelines were quite open to our interpretation, but the goal was for us to move out of our comfort zone, and do something creatively innovative. We could explore new ways of capturing, collecting or displaying media, whether they be photos, videos or anything else we could think of.
+
+<br></br>
+
+ I decided that I would focus on the way I would display my documentation. My methods of capturing photos remained mostly the same; I was just conscious to take more of them throughout the course. The creative add-on I chose to introduce was an real-time interactive image carousel I made in TouchDesigner. With the webcam turned on, I could move my hand right to go to the next image, or move my hand left to go back to the previous one.
+
+ <br></br>
+
+
+ <br>
+ <div class="margin-alignment">
+ <video controls="" width="90%" height="90%">
+   <source src="../images/assignments/creative_documentation/creative_documentation_speed150x.mp4" style= "image" type="video/mp4">
+   Your browser does not support the video tag.
+ </video>
+ <p>video in 150% speed showing how the project works.</p>
+ </div>
+ </br>
+
+
+ This project is very accessible because it doesn't require any motion capturing sensors like a kinect or leapmotion. It  operates perfectly with a simple webcam and a somewhat well-lit environment. I made it in such a way that it didn't need to detect body joint data but rather variation in pixels through an 8-bit cache system. This means that the project detects  any movement within a specific area of the video thanks to contrast in the pixels detected every 8 frames. The only down side to this is that when there is a lack of contrast (like white hand + white background or black hand + black background) then it becomes a bit harder for the system to work.
+</h2>
+
+
+<br></br>
+
+  <img src="../images/assignments/creative_documentation/screenshot.png" alt="project screenshot" style="width:100%">
+  <p>Project structure screenshot</p>
+
+<h2>
+When it came to filtering through my photos, I realised that I had not optimized the program for varying aspect ratios. The only aspect ratio that looked good was 16:9 (the same as the final output) and anything else had to be stretched, rotated or be surrounded by excess blank space. This meant that I couldn't select any pictures taken vertically.
+
+<br></br>
+
+By making this kind of project, I created a new way of telling a story to people. It could also be implemented in other ways, whether it be an interactive way of exhibiting a portfolio, showcasing different products to someone, or displaying a collective body of work. As I began to think of the different outputs for the project, I also wondered how I could play around with it. Let's just say there was not only creative documentation, but also creative experimentation.
+
+<br></br>
+
+<br>
+<div class="margin-alignment">
+<video controls="" width="90%" height="90%">
+  <source src="../images/assignments/creative_documentation/funny.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p>experimenting the different ways i could trigger the movement</p>
+</div>
+</br>
+
+
+
+
+
+
+
+Since this course is very much focused on being "open-source", you can download the project folder by clicking <a href="../images/assignments/creative_documentation/carousel_with_webcam.zip" download="filename">here</a>. You will need to install TouchDesigner in order to view the project, but it is free for personal use.
+
+
+
+
+</h2>
+
+<br>
+<h3 class="right-alignment">
+  <a href="../assignments/assignments.html" class="button"> Back </a>
+
+</br>
+
+</body>

@@ -1,5 +1,6 @@
 body {
 font-family: 'Grenze Gotisch', cursive;
+background-color: #d6eaf0;
 }
 
 h1{
@@ -19,12 +20,18 @@ h2 {
 h3 {
   font-family: 'Syne Mono', sans-serif;
   font-size: 40px;
-  line-height: 36px;
+  line-height: 44px;
 }
 
 h4 {
   font-family: 'Syne Mono', sans-serif;
   font-size: 20px;
+  font-style: bold;
+}
+
+h5 {
+  font-family: 'Grenze Gotisch';
+  font-size: 32px;
   font-style: bold;
 }
 
@@ -73,7 +80,7 @@ punctuation means blank space */
 .sidebar {
   grid-area: sidebar;
   justify-self: end;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .content {
@@ -215,10 +222,10 @@ header {
 
 .button {
   border: 1px solid black;
-  font-size: 20px;
   text-decoration: underline;
   color: black;
   padding: 1px 20px;
+  background-color: #3d7d92;
   margin-top: 20px;
   margin-left: 20px;
   display: inline-block;
@@ -244,7 +251,7 @@ header {
 
 /* Opacity 2 */
 .hover12 figure {
-	background: #000000;
+	filter: hue-rotate(250);
   width: 50%;
 }
 
@@ -253,7 +260,8 @@ header {
 	transition: .3s ease;
 }
 .hover12 figure:hover img {
-	opacity: .5;
+  filter: grayscale(0.6);
+	opacity: .9;
 }
 
 
