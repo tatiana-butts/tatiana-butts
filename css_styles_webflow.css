@@ -1,0 +1,388 @@
+body {
+font-family: 'Grenze Gotisch', cursive;
+background-color: #d6eaf0;
+}
+
+h1{
+  font-family: 'Grenze Gotisch', sans-serif;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Trispace', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 100px;
+  line-height: 26px;
+}
+
+h3 {
+  font-family: 'Syne Mono', sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+h4 {
+  font-family: 'Syne Mono', sans-serif;
+  font-size: 20px;
+  font-style: bold;
+}
+
+h5 {
+  font-family: 'Grenze Gotisch';
+  font-size: 32px;
+  font-style: bold;
+}
+
+p {
+  font-family: 'Syne Mono', monospace;
+  margin-top: 1px;
+}
+
+
+figcaption {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+
+
+
+/* website grid template
+punctuation means blank space */
+
+.grid {
+  display: grid;
+  margin-left: 50px;
+  grid-template-columns: 1fr 500px 500px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". title title ."
+  ". header header ."
+  ". space . ."
+  ". sidebar content ."
+  ". footer footer ."
+}
+
+.title {
+  grid-area: title;
+}
+
+.header {
+  grid-area: header;
+}
+
+.space {
+  grid-area: space;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  justify-self: end;
+  margin-right: 10px;
+}
+
+.content {
+  grid-area: content;
+  justify-self: start;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+
+  /* The sidebar menu */
+  .side_nav {
+    font-family: 'Syne Mono', monospace;
+    height: 185px; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #53AECB; /* blue */
+    overflow-x: hidden; /* disable horizontal scroll */
+    padding-top: 15px;
+  }
+
+  /* The navigation menu links */
+  .side_nav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #000000;
+    display: block;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .side_nav a:hover {
+    color: #f1f1f1;
+    size: 21px;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+img {
+  /* this limits the width of the image so it takes up 100% of the width of the parent maximum (ex. column) */
+  max-width: 100%;
+}
+
+
+video {
+  /* this limits the width of the image so it takes up 100% of the width of the parent maximum (ex. column) */
+  max-width: 100%;
+}
+
+
+nav {
+  background-color: #719fb2;
+  z-index: 1;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid rgba(0,0,0,100)
+}
+
+li.empty {
+  width: 50px;
+  top: -5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.top_bar {
+  font-family: 'Syne Mono', monospace;
+  }
+
+nav ul li{
+  display: inline-block;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration:underline;
+
+}
+
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+
+nav li a{
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+nav li a:hover {
+ font-size: 20px;
+}
+
+body, ul {
+  margin: 60px;
+  padding: 0;
+}
+
+header {
+  top: 70px;
+  margin-left: 160px;
+  position: relative;
+  margin-bottom: 100px;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+}
+
+.square-background {
+  height: 500px%; /* Full-height: remove this if you want "auto" height */
+  width: 800px; /* Set the width of the sidebar */
+  z-index: 0; /* Stay on top */
+  top: 250; /* Stay at the top */
+  left: 250;
+  background-color: #53AECB; /* blue */
+  padding-top: 25px;
+
+}
+
+
+.button {
+  border: 1px solid black;
+  text-decoration: underline;
+  color: black;
+  padding: 1px 20px;
+  background-color: #3d7d92;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.button:hover{
+  background: black;
+  color: white;
+}
+
+.image-me {
+  box-shadow: 5px 5px 40px rgba(0,0,0,0.3);
+  width: 50%;
+}
+
+.image {
+  box-shadow: 5px 5px 40px rgba(0,0,0,0.3);
+
+}
+
+
+/* Opacity 2 */
+.hover12 figure {
+	filter: hue-rotate(250);
+  width: 50%;
+}
+
+.hover12 figure img {
+	opacity: 1;
+	transition: .3s ease;
+}
+.hover12 figure:hover img {
+  filter: grayscale(0.6);
+	opacity: .9;
+}
+
+
+
+
+.project {
+  margin: 160px;
+  padding: 20px;
+}
+
+.blue-background {
+  background-color: #DBEBF4;
+  background-position: left;
+}
+
+.project .button {
+  margin-top: 10px;
+  /*this means that if the button is inside the project bin, we don't want the margin to be as big*/
+}
+
+.right-alignment {
+  text-align: right;
+}
+
+.margin-alignment {
+  margin-left: 140px;
+}
+
+.contact-info-button {
+  border: 1px solid black;
+  font-size: 20px;
+  text-decoration: underline;
+  color: black;
+  padding: 7px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+
+}
+
+
+footer {
+  text-align: center;
+
+}
+
+
+footer h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 23%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* GALLERY */
+
+/* The grid: Four equal columns that floats next to each other */
+.gallery-column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.gallery-column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.gallery-column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.gallery-container {
+  position: relative;
+  display: none;
+  margin-left: 200px;
+
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
