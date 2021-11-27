@@ -1,11 +1,12 @@
-body {
-font-family: 'Grenze Gotisch', cursive;
-background-color: #d6eaf0;
+body{
+  background-color: #F3EADC;
 }
+
+
 
 @font-face {font-family: 'berlin_sans_fb_regular';
 
-src: url(/images/design_intervention/berlin_sans_fb_regular.ttf) format('woff2');
+src: url('./images/design_intervention/berlin_sans_fb_regular.ttf') format('woff2');
 
 }
 
@@ -14,21 +15,22 @@ src: url(/images/design_intervention/berlin_sans_fb_regular.ttf) format('woff2')
 h1{
   font-family: 'berlin_sans_fb_regular', sans-serif;
   font-size: 60px;
+  color: #821124;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-family: 'Trispace', sans-serif;
+  font-family: 'Syne Mono', sans-serif;
   font-size: 20px;
   font-style: normal;
-  margin-left: 100px;
+  color: #441A05;
   line-height: 26px;
 }
 
 h3 {
   font-family: 'Syne Mono', sans-serif;
   font-size: 40px;
-  line-height: 44px;
+  color: #441A05;
 }
 
 h4 {
