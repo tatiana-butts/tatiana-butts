@@ -1,3 +1,11 @@
+*{
+
+  margin:0;
+  padding:0;
+}
+
+
+
 body{
   background-color: #F3EADC;
 }
@@ -14,7 +22,7 @@ src: url('./images/design_intervention/berlin_sans_fb_regular.ttf') format('woff
 
 h1{
   font-family: 'berlin_sans_fb_regular', sans-serif;
-  font-size: 60px;
+  font-size: 7vw;
   color: #821124;
   margin-bottom: 10px;
 }
