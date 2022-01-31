@@ -69,6 +69,7 @@ punctuation means blank space */
   ". header header ."
   ". space . ."
   ". sidebar content ."
+  "quarter sidebar content latter"
   ". footer footer ."
 }
 
@@ -83,6 +84,15 @@ punctuation means blank space */
 .space {
   grid-area: space;
 }
+
+.quarter {
+  grid-area: quarter;
+}
+
+.latter {
+  grid-area: latter;
+}
+
 
 .sidebar {
   grid-area: sidebar;
@@ -104,7 +114,7 @@ punctuation means blank space */
   /* The sidebar menu */
   .side_nav {
     font-family: 'Syne Mono', monospace;
-    height: 185px; /* Full-height: remove this if you want "auto" height */
+    height: auto; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
