@@ -71,6 +71,7 @@ punctuation means blank space */
   ". sidebar content ."
   "quarter sidebar content latter"
   ". footer footer ."
+  ". full full full"
 }
 
 .title {
@@ -107,6 +108,10 @@ punctuation means blank space */
 
 .footer {
   grid-area: footer;
+}
+
+.full {
+  grid-area: full;
 }
 
 
