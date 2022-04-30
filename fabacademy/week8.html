@@ -94,12 +94,111 @@
   For this week's assignment, we had to use your programmer (HUZZAH32, ESP32 Feather) to program a circuit with a led and a button to do something. The circuit board, could be done as a shield, breadboard or vinyl cutter
 
         <br></br>
-        Here is what I did:
+        I worked on the project after the Easter holidays once I had more time on my hands. I tried to integrate this assignment with my project and interests, so I browsed YouTube until I found something I was interested in.
 
-        
+
         <br></br>
+
+
+      </div>
+      </div>
+
+      <div class="grid">
+      <div class="sidebar">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V_Q_fDukTI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+
+
+      <div class="content">
+
+        Material needed:
+
+        <ul>
+          <li>Arduino uno board
+          <li>Power cable
+          <li>Ultrasonic sensor (HC SOR-4)
+          <li>Some cables and breadboard
+        </ul>
+
+      </div>
+    </div>
+
+
+
         <br></br>
+
+
+
+        <div class="grid">
+        <div class="sidebar">
+
+        Here is a quick schematic overview of how everything fits together. Explanation in video
         <br></br>
+
+
+      </div>
+      <div class="content">
+
+
+        <img src="../images/fabacademy/week8/design.png" alt="schematic" style="width:100%">
+
+      </div>
+    </div>
+
+Code for me to remember:
+
+
+<br></br>
+
+
+
+
+        // ULTRASONIC SENSOR
+int TRIG = 3;
+int ECHO = 2;
+int DURATION;
+int DISTANCE;
+
+
+
+void setup() {
+
+  // ULTRASONIC SENSOR
+  pinMode(TRIG, OUTPUT);
+  pinMode(ECHO, INPUT);
+
+  // SERIAL
+  Serial.begin(9600);
+
+}
+
+
+void loop() {
+
+  digitalWrite(TRIG,HIGH);
+  delay(1);
+  digitalWrite(TRIG,LOW);
+  DURATION = pulseIn(ECHO,HIGH);
+  DISTANCE = DURATION / 58.2;
+
+  if(DISTANCE > 0 && DISTANCE < 50 ){
+    Serial.println(DISTANCE);
+    delay(100);
+  }
+
+
+
+
+
+
+        <br></br>
+
+
+
+
+
 
 
 </div>
