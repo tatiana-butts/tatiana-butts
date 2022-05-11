@@ -44,72 +44,84 @@
 
   <div class="grid">
 
+    <div class="title">
 
       <h6>
 
 
         <br></br>
 
-        Week 10 & 13 - Output devices - Input Devices¶
+        Week 10 & 13 - Output devices - Input Devices
+        <br></br>
+
 You remember when you had to DESIGN A PCB for week 6? “design a pcb for an input or an output” now it is time to fabricate it ( finish the design - mill it - solder it)
 Make the PCB you designed real and make it work ( you have from these week until INPUT WEEK- included)
+<br></br>
+
+I decided to team up with Angel on this task, given the we both found ourselves equally lost when it came to ideas for what to do with milling PCBs.
+<br></br>
+
+Angel and I had both worked on separate KiCad projects for the previous week, so we decided to stick to one project to  simplify everything for us while we tried to figure everything out. We hoped that by working togehter, we could help each other throughout the whole process.
+<br></br>
+
+Angel had designed an attachment to the Arduino feather, which could allow her to connect a light sensor and an LED. We began by exporting the Kicad schematic into Illustrator and separated the layers into the steps we needed to take while milling: cutting the interior design, drilling through the holes and lastly cutting the edges. Each layer was exported into a separate PNG and later imported into MODS to create the gcode file.
+
+<br></br>
+
+<img src="../images/fabacademy/week13/mod.jpeg" alt="" style="width:100%">
+<br></br>
+
+
+We encountered some problems with the website, mostly due to us not remembering how to use certain functions:
+
+
+<ul>
+<li>setting up the 0;0 origin: we did not realise it was set to a default of 10;10;10, which caused us to mill in the air as opposed to the PCB material.
+<li>full black and white layout: we realised some of the objects were not fully black, but rather a very dark grey, which made it undetectable by the software and thus did not cut those points.
+<li>rotating the file so that it was in the correct axis.
+<li>making sure to have 1000pp quality to get full precision.
+</ul>
+
+
+--- screenshots of PNG files, software, and gcode files
+
+<br></br>
+
+
+<br></br>
+
+
+Milling the PCB
+
+<br></br>
+
+
+<img src="../images/fabacademy/week13/clean1.jpeg" alt="" style="width:49.5%">
+<img src="../images/fabacademy/week13/clean2.jpeg" alt="" style="width:49.5%">
+
+<ul>
+<li>Cleaned up the wood (which needs to be sanded/changed because it was way too rough!!)
+<li>Taped the PCB with double sided tape (we did not put enough on the first try which made the PCB move a lot, but luckily it was only a test)
+<li>Use Vpanel for SRM-20 machine
+<li>Place the 1/64inch endmill for the internal Milling
+<li>Adjust x, y, z axis coordinates (unscrew end mill when close to the board, allowing it to fall perfectly, then tighten it again)
+<li>Press cut on the program and select the right file, making sure that the previous files were deleted (we accidentally cut somebody else's file at first)
+</ul>
+
+<img src="../images/fabacademy/week13/angel.jpeg" alt="milling" style="width:49.5%">
+
+<img src="../images/fabacademy/week13/milling.jpeg" alt="milling" style="width:49.5%">
+
+<br></br>
 
 
 
+<img src="../images/fabacademy/week13/final.jpeg" alt="" style="width:49.5%">
+<img src="../images/fabacademy/week13/final2.jpeg" alt="" style="width:49.5%">
+<br></br>
 
 
-
-  <div class="grid">
-    <div class="sidebar">
-
-            <h6>
-
-
-
-        This week we had a lecture on Embedded Programming. The task will be combined with WEEK 13's task (after April holidays) and consists of designing a PCB from scratch for inputs or outputs.
-
-
-  </ul>
-
-  </div>
-
-
-<div class="content">
-
-        <img src="../images/fabacademy/week8/notes.jpeg" alt="" style="width:100%">
-        <br></br>
-
-</div>
-</div>
-
-
-<div class="grid">
-<div class="title">
-
-
-
-
-  I didn't have too much time to come up with ideas for this project, since I have been busy preparing for Design Dialogues coming up in a few weeks and I've focused on trying to complete final design interventions.
-
-        <br></br>
-  For this week's assignment, we had to use your programmer (HUZZAH32, ESP32 Feather) to program a circuit with a led and a button to do something. The circuit board, could be done as a shield, breadboard or vinyl cutter
-
-        <br></br>
-        Here is what I did:
-
-
-        <br></br>
-        <br></br>
-        <br></br>
-
-
-</div>
-</div>
-
-
-
-
-
+The final result.
 </div>
 </div>
 
