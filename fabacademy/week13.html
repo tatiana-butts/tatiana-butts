@@ -134,7 +134,102 @@ Milling the PCB
 The final result.
 <br></br>
 
-I am considering making another version by making "PCB art". I wonder how it could look if I milled some sort of Fractal pattern on the PCB.
+Time to solder it!
+<br></br>
+<img src="../images/fabacademy/week13/solder3.png" alt="" style="width:100%">
+
+<br></br>
+
+There's not much to say here because it's a straightforward process. Basically, we took the light sensor & LED and connected both to the PCB using the machine and soldering wire.
+<br></br>
+
+<img src="../images/fabacademy/week13/solder2.png" alt="" style="width:49.5%">
+
+<img src="../images/fabacademy/week13/solder1.png" alt="" style="width:49.5%">
+
+<img src="../images/fabacademy/week13/solder.png" alt="" style="width:100%">
+
+
+<br></br>
+
+
+We later programmed the Arduino + PCB using the code from <a href="https://arduinogetstarted.com/tutorials/arduino-light-sensor-triggers-led">here</a>.
+<br></br>
+<img src="../images/fabacademy/week13/arduino.png" alt="" style="width:100%">
+
+<br></br>
+
+It's a simple Arduino + light sensor triggering LED code, which is exactly what we were looking for. Initially, we had some struggles trying to make it work, but we think it was because the cable was not receiving/sending data correctly. We asked Vikrant for help and he said the code was right, so it must've been the cables.
+
+<br></br>
+
+Angel and I experimented with switching the HIGH & LOW values, meaning we could decide if the LED would turn on or off based on the amount of light.
+
+
+<div class="grid">
+
+  <div class="sidebar">
+    <br></br>
+
+In this case:
+
+<br></br>
+
+if(analogValue < ANALOG_THRESHOLD)
+<br>
+  digitalWrite(LED_PIN, HIGH); </br>
+
+  <br></br>
+
+else
+
+<br>
+  digitalWrite(LED_PIN, LOW); </br>
+}
+
+
+The LED would turn on if the light was off (meaning the ANALOG_THRESHOLD was inferior to 500)
+</div>
+
+
+  <div class="content">
+    <br></br>
+
+
+    In this case:
+
+    <br></br>
+
+    if(analogValue < ANALOG_THRESHOLD)
+    <br>
+      digitalWrite(LED_PIN, OFF); </br>
+
+      <br></br>
+
+    else
+
+    <br>
+      digitalWrite(LED_PIN, HIGH); </br>
+    }
+
+
+    The LED would turn on if the light was on (meaning the ANALOG_THRESHOLD was superior to 500)
+
+
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+  <div class="grid">
+
+    <div class="title">
+
+<h6>
+
+I am considering making another version by making "PCB art". I wonder how it could look if I milled some sort of  pattern on the PCB. The PCB might not be functional in that case, but it could be interesting to consider how to make it look unusual and be functional at the same time.
 </div>
 </div>
 
