@@ -147,46 +147,7 @@
       </div>
     </div>
 
-Code for me to remember:
 
-
-<br></br>
-
-
-
-
-        // ULTRASONIC SENSOR
-int TRIG = 3;
-int ECHO = 2;
-int DURATION;
-int DISTANCE;
-
-
-
-void setup() {
-
-  // ULTRASONIC SENSOR
-  pinMode(TRIG, OUTPUT);
-  pinMode(ECHO, INPUT);
-
-  // SERIAL
-  Serial.begin(9600);
-
-}
-
-
-void loop() {
-
-  digitalWrite(TRIG,HIGH);
-  delay(1);
-  digitalWrite(TRIG,LOW);
-  DURATION = pulseIn(ECHO,HIGH);
-  DISTANCE = DURATION / 58.2;
-
-  if(DISTANCE > 0 && DISTANCE < 50 ){
-    Serial.println(DISTANCE);
-    delay(100);
-  }
 
   <br></br>
 
@@ -197,8 +158,10 @@ to be continued...
 
         <br></br>
 
+        I couldn't find the material needed to make this project, so instead I searched for something else:
+https://www.youtube.com/watch?v=GyPovhaTO04&ab_channel=MaxPierson-Li%C3%A9nard
 
-
+https://www.maxpierson.me/2018/04/13/i-made-a-thing-with-touchdesigner/
 
 
 
