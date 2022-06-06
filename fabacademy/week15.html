@@ -42,30 +42,66 @@
   </br>
 
 
-  <div class="grid">
 
+
+  <div class="grid">
+    <div class="title">
 
       <h6>
 
+              Week 15: Interface & application Programming
+              <br></br>
 
-        Week 15: Interface & application Programming
+              Code/program an interface with the tools provided during the ( processing,P5JS, MitAppInventor,Aframe,NodeRed) or other alternatives software that interfaces a user with an input and/or output device that you want to use.
+              Interpret and implement design and programming protocols to create a Graphic User Interface (GUI).
+              <br></br>
+
+        I did this in my 4th fabchallenge, using Touchdesigner.
+        <br></br>
+        Touchdesigner is a node based visual programming language for real time interactive multimedia content, developed by the same people who made Houdini. It's a very potent software because you can implement python, communicate with other programs like Resolume, Notch, Ableton, TouchOSC etc. and even import/export Arduino data.
+        <br></br>
+        Suring the fabchallenge, I used TD with Arduino and Ableton to create an interface, where you can push a button and get a visual. The process was a bit complex.
         <br></br>
 
-        Code/program an interface with the tools provided during the ( processing,P5JS, MitAppInventor,Aframe,NodeRed) or other alternatives software that interfaces a user with an input and/or output device that you want to use.
-        Interpret and implement design and programming protocols to create a Graphic User Interface (GUI).
+        We started out by testing TouchOSC to understand how OSC protocols worked. We needed to connect to the same IP address + port so that the communication could start.
+        <br></br>
+
+        <img src="../images/fabacademy/week15/week15.gif" alt="" style="width:100%">
+        <br></br>
+
+        Once this communication was established and I could see the inputs from the TouchOSC app on Chris' phone showing up on screen, I played around with the hue values on screen.
+        <br></br>
+
+        <img src="../images/fabacademy/week15/week15_2.gif" alt="" style="width:100%">
+
+        <br></br>
+
+        Then, I started playing around with the buttons, making various visuals and effects appear.
+        <br></br>
+        <img src="../images/fabacademy/week15/week15_3.gif" alt="" style="width:45%">
+        <br></br>
 
 
-  <div class="grid">
-    <div class="title">
+        I also played around with the Leap motion.
+        <br></br>
+        <img src="../images/fabacademy/week15/week15_4.gif" alt="" style="width:100%">
+        <br></br>
 
-      <h6>
 
+        For each of the inputs, the techniques are generally the same. You use the node associated with the device (serialDAT for Arduino, TouchOSC for OSC protocol interfaces, Leapmotion channels for the Leap motion). These nodes read the inputs coming in from the sensors or buttons.
+        <br></br>
 
-  <div class="grid">
-    <div class="title">
+        Then, you select the data from the channels which interests you using a SelectCHOP and remap it according to the values you need to make your project interactive.
+        <br></br>
+
+        For example, when using the rotary knobs through arduino, the values I received were from 0 to 1023, so I remapped those from 0 to 360 to modify the hue of the project. If I wanted to change the opacity, I would remap these values from 0 to 1 (0 being 0% transparency, 1 being 100% full transparency).
+        <br></br>
+
+        These values can be applied to any visual parameter, changing anything from color to shape. Once these ideas  are clear, it becomes very easy to make a cool interactive project with  whatever device is compatible with TD.
 
       <br></br>
 
+        The project files can be found on the Fabchallenge 4 repo, <a href="https://github.com/chris-ernst/hybrid-ecosystems">here</a>
 
   </div>
 
